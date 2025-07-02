@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<style>
+		body{			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f8f8ff;
+			font-family: 'Roboto', sans-serif;	
+			margin-top: 30px;
+			margin-bottom: 30px;						
+		}
+		
+		#card{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-items: stretch; /* Faz os cards internos terem mesma altura */	
+			width: 90%;
+			height: auto;
+			max-width: 1920px;
+			max-height: 1080px ;			
+			font-family: 'Roboto', sans-serif;			
+			background-color: #fff;
+			border-radius: 20px;	
+		}
+		.cards-esquerda{
+			margin: 50px 10px 20px 10px; /*s -d -i -e*/
+		}
+		.cards-direita{
+			margin: 50px 10px 20px 10px; /*s -d -i -e*/			
+		}
+		#card1{			
+			width: 25%;
+			height: auto;
+			max-width: 1900px;
+			border: 1px solid #2e3a59;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;		
+			font-family: 'Roboto', sans-serif;
+			color: white;			
+			background-color: #2e3a59;
+			padding: 10px;
+		}
+		#card1 h4{
+			color: #87ceeb;
+		}
+		#card2{			
+			width: 75%;
+			height: auto;
+			max-width: 1900px;
+			/*border: 1px solid black;*/
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;		
+			font-family: 'Roboto', sans-serif;			
+			background-color: #fff;
+			padding: 10px;
+		}
+		#card2 h3{
+			color: #2e3a59;
+		}
+		@media (max-width: 768px) {
+		  #card1, #card2 {
+		    width: 100%; /* ocupa 100% da tela no celular */
+		    border-right: none;
+		  }
+
+		  #card {
+		    flex-direction: column;
+		    align-items: center;
+		    margin-top: 450px;
+		    margin-bottom: 550px;
+		  }
+		}		
+	</style>
+	<title>Curriculo 03</title>
+</head>
+<body>
+	<div id="card">
+		<div id="card1">
+			<div class="cards-esquerda" id="contato">
+				<h3>Contato</h3><hr>
+				<h4>Email: jõao@email.com</h4>
+				<h4>Telefone: (11) 99999-9999</h4>
+				<h4>Endereço: Rua Exemplo, 123 - São Paulo, SP</h4>
+			</div>
+			<div class="cards-esquerda" id="informacoes">
+				<h3>Informacoes</h3><hr>
+				<h4>Data de nascimento: 01/01/1990</h4>
+				<h4>Nacionalidade: Brasileira</h4>
+			</div>
+			<div class="cards-esquerda" id="habilidades">
+				<h3>Habilidades</h3><hr>
+				<h4>HTML, CSS, JavaScript</h4>
+				<h4>React, Node.js</h4>
+				<h4>SQL, MongoDB</h4>
+				<h4>Scrum / Kanban</h4>
+			</div>
+			<div class="cards-esquerda" id="idiomas">
+				<h3>Idiomas</h3><hr>
+				<h4>Português(Nativo)</h4>
+				<h4>Inglês Avançado</h4>
+				<h4>Espanhol (Intermediário)</h4>
+			</div>			
+		</div>
+		<!-- Divisao entre os 2 cards -->
+		<div id="card2">
+			<div class="cards-direita" id="topo">
+				<h2>João da Silva</h3>
+				<p>Desenvolvedor Web com experiência em criação de aplicações responsivas e foco em usabilidades, performance e código limpo.</p>
+			</div>
+			<div class="cards-direita" id="resumo">
+				<h3>Resumo Profissional</h3><hr>
+				<p>Profissional com mais de 4 anos de experiência em desenvolvimento web, participando de projetos de pequeno a grande porte, tanto no front-end quanto no back-end.</p>
+			</div>
+			<div class="cards-direita" id="experiencia">
+				<h3>Experiência Profissional</h3><hr>
+				<h4><strong>Empresa ABC - </strong>Desenvolvedor Web (2020-2023)</h4>
+				<ul>
+					<li>Desenvolvimento de interfaces modernas e responsivas com HTML5, CSS3 e JavaScript.</li>
+					<li>Integração com APIs REST e criação de componentes reutilizáveis em React.</li>
+				</ul>
+				<h4><strong>Empresa XYZ - </strong>Estagiário em TI (2019-2020)</h4>
+				<ul>
+					<li>Auxílio no suporte técnico e manutenção de sistemas internos.</li>
+					<li>Colaboração em projetos de migração para a nuvem.</li>
+				</ul>
+			</div>
+			<div class="cards-direita" id="formacao">
+				<h3>Formação Acadêmica</h3><hr>
+				<h4><strong>Universidade XYZ - </strong>Bacharel em Ciência da Computação (2015-2019)</h4>				
+			</div>
+			<div class="cards-direita" id="certificacao">
+				<h3>Certificações</h3><hr>
+				<ul>
+					<li>Desenvolvimento Web Full Stack - Alura (2022)</li>
+					<li>
+						Scrum Fundamental Certified - Scrumstudy (2021)
+					</li>
+				</ul>
+			</div>
+			<div class="cards-direita" id="projetos">
+				<h3>Projetos</h3><hr>
+				<h4><strong>Portifólio Online - </strong>Site com projetos pessoais e blog técnico <a href="jaoa.dev">(joãosilva.dev)</a></h4>
+				<h4><strong>Aplicativo de Tarefas - </strong>Web app com React, Firebase e autenticação de usuários</h4>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
