@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nossa Empresa: empresa de tecnologia, voltada para fabricação de softwares para o varejo e lojas de equipamentos de informática.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    </noscript>
+
     <link rel="stylesheet" href="style.css">
     <title>Meu Primeiro Site</title>
 </head>
 
 <body>
     <header>
-        <h1>Bem-vindo à Nossa Empresa</h1>
+        <h1>Bem-vindo à Pura Energia</h1>
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
@@ -25,30 +33,38 @@
             </ul>
         </nav>
     </header>
-    <picture>
-        <img class="img-headline" src="img/headline.jpg" alt="headline">
-    </picture>
+    <div class="hero-img">
+        <picture>
+            <source srcset="img/puraenergia.webp" type="image/webp">
+            <img class="img-headline" src="img/puraenergia.webp" alt="headline">
+        </picture>
+    </div>
     <button class="botao-ajuda">?</button>
     <main class="principal">
         <div class="sobre">
             <h3>Sobre Nós</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa animi sequi explicabo nulla soluta
-                provident expedita distinctio veritatis incidunt perspiciatis a natus, aperiam perferendis, quasi in
-                quaerat impedit numquam!</p>
+            <p>A Pura Energia é uma empresa especializada na venda e instalação de sistemas de energia solar para residências,
+               comércios e indústrias. Atuando com tecnologia de ponta, oferece soluções sustentáveis que reduzem significativamente
+               os custos com energia elétrica. Conta com uma equipe técnica qualificada para garantir projetos personalizados e eficientes.
+               Trabalha com equipamentos certificados e garantia de qualidade. O compromisso da SolEnergia é entregar economia, autonomia
+               energética e respeito ao meio ambiente.</p>
         </div>
         <div class="produtos">
             <h3>Nossos Produtos</h3>
             <div class="box-produtos box1">
-                <h4>Produto1</h4>
-                <p>Descrição simples do produto 1</p>
-            </div>
+                <h4>Painel Solar</h4>
+                <p>Captação de energia</p>
+                <img class="box-img" src="img/banner1_img_1.webp" alt="imagem do cubo de energia">
+            </div>            
             <div class="box-produtos box2">
-                <h4>Produto2</h4>
-                <p>Descrição simples do produto 2</p>
+                <h4>Parede de Energia</h4>
+                <p>Recarga de equipamentos</p>
+                <img class="box-img" src="img/headline.webp" alt="imagem do cubo de energia">
             </div>
             <div class="box-produtos box3">
-                <h4>Produto3</h4>
-                <p>Descrição simples do produto 3</p>
+                <h4>Conversores</h4>
+                <p>Conversores de Corrente</p>
+                <img class="box-img" src="img/banner2_img_0.webp" alt="imagem do cubo de energia">
             </div>
         </div>
         <div class="servicos">

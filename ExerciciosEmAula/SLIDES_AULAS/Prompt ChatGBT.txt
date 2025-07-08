@@ -1,0 +1,1 @@
+chat, assuma que voce é um cliente de uma empresa e vc precisa de um site para divulgar a empresa na internet. Eu vou te perguntar algumas coisas e vc devera me responder em formato de texto de acordo com as usas necessidades como  cliente. Responda apenas as minhas perguntas de acordo com o que eu pergunto
