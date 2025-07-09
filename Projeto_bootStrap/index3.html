@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        .header-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #2e3a59;
+            color: #fff;
+            padding: 4rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .cartao-left,
+        .cartao-central,
+        .cartao-direita {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1 1 auto;
+            height: 100%;
+            padding: 2rem;
+        }
+        .cartao-left,
+        .cartao-direita {
+            background-color: #ecf0f1;
+            padding-bottom: 9rem;
+        }
+        .cartao-central {
+            background-color: #bdc3c7;
+        }
+        .conteudo-principal {
+            min-height: 100%;
+        }
+        h3{
+            color: #2e3a59;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-xxl">
+        <div class="row col-md-12 header-box">
+            <h1>João da Silva</h1>
+            <p>Desenvolvedor Web * joao@email.com * (11) 91234-5678</p>
+        </div>   
+        <div class="row g-0 align-items-stretch conteudo-principal">
+            <!-- Coluna Esquerda -->
+            <div class="col-12 col-md-4 cartao-left h-100">
+                <div class="linha">
+                    <h3>Contato</h3>
+                    <p>Email: joao@email.com</p>
+                    <p>Telefone: (11) 91234-5678</p>
+                    <p>Endereço: Rua Exemplo, 123</p>
+                </div>
+                <div class="linha">
+                    <h3>Idiomas</h3>
+                    <p>Português (Nativo)</p>
+                    <p>Inglês (Intermediário)</p>
+                </div>
+                <div class="linha">
+                    <h3>Habilidades</h3>
+                    <p>HTML, CSS, JS</p>
+                    <p>PHP, MySQL</p>
+                    <p>Git, VSCode</p>
+                </div>
+            </div>
+            <!-- Coluna Central -->
+            <div class="col-12 col-md-4 cartao-central h-100">
+                <div class="linha">
+                    <h3>Resumo</h3>
+                    <p>Desenvolvedor Web com 3 anos de experiência em criação de sites e sistemas. Apaixonado por
+                        tecnologia e aprendizado contínuo.</p>
+                </div>
+                <div class="linha">
+                    <h3>Experiência</h3>
+                    <p><b>Web Dev Júnior - Agência XYZ</b></p>
+                    <p>2022 - Atual</p>
+                    <p>Criação de sites responsivos e manutenção em sistemas em PHP.</p>
+                    <p><b>Estagiário - Startup ABC</b></p>
+                    <p>2021 - 2022</p>
+                    <p>Auxílio em projetos de frontend e teste de software.</p>
+                </div>
+                <div class="linha">
+                    <h3>Educação</h3>
+                    <p><b>Análise e Desenvolvimento de Sistemas</b></p>
+                    <p>Faculdade Exemplo (2020 - 2023)</p>
+                </div>
+            </div>
+            <!-- Coluna Direita -->
+            <div class="col-12 col-md-4 cartao-direita h-100">
+
+                <div class="linha">
+                    <h3>Projetos</h3>
+                    <p><b>Site Portfólio</b></p>
+                    <p><a href="#">www.joaosilva.dev</a></p>
+                    <p><b>Blog Tech</b></p>
+                    <p><a href="#">www.blogtech.com</a></p>
+                </div>
+                <div class="linha">
+                    <h3>Cursos</h3>
+                    <p>Curso Full Stack - Udemy</p>
+                    <p>HTML e CSS - Curso em Vídeo</p>
+                </div>
+                <div class="linha">
+                    <h3>Redes</h3>
+                    <p><a href="https://www.linkedin.com/in/joaosilva" target="_blank">LinkedIn: joaosilva</a></p>
+                    <p><a href="https://github.com/joaosilva" target="_blank">GitHub: joaosilva</a></p>
+                </div>
+            </div>
+        </div>
+     </div>   
+</body>
+</html>

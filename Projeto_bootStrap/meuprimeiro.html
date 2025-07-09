@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Meu Primeiro Web Site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navegacao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #000;
+            color: #fff;           
+        }
+
+        .navegacao ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3rem;
+            list-style-type: none;
+        }
+
+        /* .navegacao ul li {
+            padding: 0.5rem;
+        } */
+
+        .navegacao a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .box-produtos {
+            margin-bottom: 1.5rem;
+        }
+
+        .article {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <nav class="container-fluid p-4 navegacao">
+        <div>
+            <h1>Bem-vindo à Nossa Empresa</h1>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="w-100 vh-10 overflow-hidden">
+            <img src="./img/puraenergia.webp" class="w-100 h-100 object-fit-cover" alt="Banner da Pura Energia">
+        </div>
+    </div>
+
+
+
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <section class="row col-md-12 article">
+            <article id="sobre">
+                <h3>Sobre Nós</h3>
+                <p>
+                    A Pura Energia é uma empresa especializada na venda e instalação de sistemas de energia solar para
+                    residências,
+                    comércios e indústrias. Atuando com tecnologia de ponta, oferece soluções sustentáveis que reduzem
+                    significativamente os custos com energia elétrica. Conta com uma equipe técnica qualificada para
+                    garantir
+                    projetos personalizados e eficientes. Trabalha com equipamentos certificados e garantia de
+                    qualidade.
+                    O compromisso da Pura Energia é entregar economia, autonomia energética e respeito ao meio ambiente.
+                </p>
+            </article>
+        </section>
+
+        <section class="row col-md-12 article">
+            <article id="produtos">
+                <h3>Nossos Produtos</h3>
+                <div class="box-produtos box1">
+                    <h4>Painel Solar</h4>
+                    <p>Captação de energia</p>
+                </div>
+                <div class="box-produtos box2">
+                    <h4>Parede de Energia</h4>
+                    <p>Recarga de equipamentos</p>
+                </div>
+                <div class="box-produtos box3">
+                    <h4>Conversores</h4>
+                    <p>Conversores de Corrente</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="row col-md-12 article">
+            <article id="servicos">
+                <h3>Nossos Serviços</h3>
+                <ul>
+                    <li>Atendimento ao Cliente</li>
+                    <li>Suporte Técnico</li>
+                    <li>Consultoria personalizada</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
