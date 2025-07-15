@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercadinho Borba Gato</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <style>
+      .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <strong class="fs-4">Mercado Borba Gato</strong>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Produtos</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Ofertas</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control form-control-dark text-bg-dark"
+              placeholder="Buscar..."
+              aria-label="Buscar"
+            />
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-warning">Cadastro</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- LAYOUT PRINCIPAL COM SIDEBAR + CONTEÚDO -->
+    <div class="container-fluid d-flex p-0">
+      <!-- SIDEBAR -->
+      <div
+        class="flex-shrink-0 p-3 text-bg-dark"
+        style="width: 280px; height: 100vh"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <span class="fs-4">Menu</span>
+        </a>
+        <hr />
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page"> Home </a>
+          </li>
+          <li><a href="#" class="nav-link text-white">Dashboard</a></li>
+          <li><a href="#" class="nav-link text-white">Pedidos</a></li>
+          <li><a href="#" class="nav-link text-white">Produtos</a></li>
+          <li><a href="#" class="nav-link text-white">Clientes</a></li>
+        </ul>
+        <hr />
+        <div class="dropdown">
+          <a
+            href="#"
+            class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://github.com/mdo.png"
+              alt=""
+              width="32"
+              height="32"
+              class="rounded-circle me-2"
+            />
+            <strong>Admin</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">Novo Projeto</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CONTEÚDO PRINCIPAL -->
+      <div class="flex-grow-1 p-4">
+        <!-- CARROSSEL -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.galeriadaarquitetura.com.br/img/projeto/SF1/3198/supermercado-konig14123.jpg"
+                class="d-block w-100"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT06M0NqISAJM5S3oaGlaY6_BjMlOz6cn8s-Q&s"
+                class="d-block w-100"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.luterled.com.br/wp-content/uploads/2022/03/projeto-de-supermercado.jpg"
+                class="d-block w-100"
+                alt="Slide 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-QFoqBLZbP5sIjUxdYc1rAvhIEyeV3Pa+LtZTcuXZ/UOkbZc6c5DJ9RaUanBZkT1T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const carouselElement = document.querySelector(
+        "#carouselExampleIndicators"
+      );
+      if (bootstrap && carouselElement) {
+        const carousel = new bootstrap.Carousel(carouselElement, {
+          interval: 3000,
+          ride: "carousel",
+        });
+        console.log("Carrossel ativado com sucesso.");
+      } else {
+        console.error("Erro ao inicializar o carrossel.");
+      }
+    </script>
+  </body>
+</html>
