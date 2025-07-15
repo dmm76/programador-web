@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,8 @@
     <title>Meu Segundo Web Site</title>
 
 </head>
-
 <body>
-    <div class="bg-primary p-3">
+    <div class="bg-primary p-3 fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
             <h4 class="mb-0 text-white">Minha Empresa</h4>
             <ul class="nav">
@@ -27,7 +25,7 @@
             </ul>
         </div>
     </div>
-    <div class="container-fluid text-bg-light d-flex flex-column justify-content-center align-items-center p-4">
+    <div class="container-fluid text-bg-light d-flex flex-column justify-content-center align-items-center p-5 mt-5">
         <h1>Bem vindo ao Minha Empresa</h1>
         <p>Este é um site simples feito com <strong>Bootstrap</strong> para você aprender!</p>
         <button type="button" class="btn btn-primary">Saiba Mais</button>
@@ -147,24 +145,25 @@
             </p>
         </div>
     </div>
-    <div class="container-fluid bg-light py-5 p-3 m-2">
+    <div class="container-fluid bg-light py-5 p-3">
         <div class="container">
             <form>
                 <h2 class="mb-3">Fale Conosco</h2>
                 <div class="col mb-3">
+                    <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control" placeholder="Nome Completo">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Endereço de Email">
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Endereço de Email">
                 </div>
                 <div class="form-group mb-4">
-                    <label for="exampleFormControlTextarea1">Mensagem</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="form-control" name="mensagem_usuario" id="exampleFormControlTextarea1" rows="3"
                         placeholder="Insira sua mensagem aqui"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
             </form>
         </div>
     </div>

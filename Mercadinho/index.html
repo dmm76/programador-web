@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <script src="./js/script.js" defer></script>        
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Mercadinho</title>
+    </head>
+    <body>
+        <div class="d-flex flex-column wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sn mb-3 py-3">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="/">Mercadinho Borba Gato</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a href="/index.html" class="nav-link text-white">Principal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contato.html" class="nav-link text-white">Contato</a>
+                            </li>
+                        </ul>
+                        <div class="align-self-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="/cadcli.html" class="nav-link text-white">Quero Me Cadastrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/carrinho.html" class="nav-link text-white">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0">
+                                        <small>5</small>
+                                    </span>
+                                    <a href="/carrinho.html" class="nav-link text-white">
+                                        <img src="./img/cart.svg" alt="Carrinho" style="width: 24px; height: 24px;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- MAIN -->
+            <main class="flex-fill">
+                <div class="container">
+                    <!-- Carrosel -->
+                    <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                        data-bs-interval="5000"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/banner.jpg" class="d-block w-100 carousel-img" alt="Promoçoes">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/banca.jpg" class="d-block w-100 carousel-img" alt="Frutas Novas todos os dias">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/compras01.jpg" class="d-block w-100 carousel-img" alt="Clientes satisfeitos">
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Produtos -->
+                    <div class="container my-3">
+                        <div class="container text-center">
+                            <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                                <div class="col">
+                                    <div class="card h-100 position-relative">
+                                        <img src="./img/produtos.jpg" class="card-img-top produto-img" alt="...">
+                                        <i class="bi bi-heart favorito-icon text-danger position-absolute top-0 end-0 m-2" style="cursor: pointer; font-size: 24px;"></i>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Frutas</h5>
+                                            <p class="card-text">Frutas Fresquinhas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 position-relative">
+                                        <img src="./img/paes.jpg" class="card-img-top produto-img" alt="...">
+                                        <i class="bi bi-heart favorito-icon text-danger position-absolute top-0 end-0 m-2" style="cursor: pointer; font-size: 24px;"></i>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Padaria</h5>
+                                            <p class="card-text">Produtos de Qualidade</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 position-relative">
+                                        <img src="./img/produtos03.jpg" class="card-img-top produto-img" alt="...">
+                                        <i class="bi bi-heart favorito-icon text-danger position-absolute top-0 end-0 m-2" style="cursor: pointer; font-size: 24px;"></i>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Temperos</h5>
+                                            <p class="card-text">Variedade em Temperos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 position-relative">
+                                        <img src="./img/croassant.jpg" class="card-img-top produto-img" alt="...">
+                                        <i class="bi bi-heart favorito-icon text-danger position-absolute top-0 end-0 m-2" style="cursor: pointer; font-size: 24px;"></i>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Padaria Completa </h5>
+                                            <p class="card-text">Produtos de Qualidade</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 position-relative">
+                                        <img src="./img/higiene.jpg" class="card-img-top produto-img" alt="...">
+                                        <i class="bi bi-heart favorito-icon text-danger position-absolute top-0 end-0 m-2" style="cursor: pointer; font-size: 24px;"></i>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Produtos de Higiene</h5>
+                                            <p class="card-text">Qualidade em Produtos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 position-relative">
+                                        <img src="./img/iogurtes.jpg" class="card-img-top produto-img" alt="...">
+                                        <i class="bi bi-heart favorito-icon text-danger position-absolute top-0 end-0 m-2" style="cursor: pointer; font-size: 24px;"></i>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Laticinios em Geral</h5>
+                                            <p class="card-text">Produtos Saudáveis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="bootstrap/js/bootstrap.bundle.min.js"></script>                
+            </main>
+            <!-- FOOTER -->
+            <footer class="bg-danger text-white border-top shadow-sm py-3">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-sm">
+                            Atendimento: (44) 3259-1533
+                            <br>
+                            Aberto até as 20:00
+                        </div>
+                        <div class="col-sm">
+                            Endereço: R. das Tipuanas, 250, Borba Gato - Conj. Hab. Inocente Vila Nova Júnior, Maringá - PR, 87060-130
+                        </div>
+                        <div class="col-sm">
+                            © 2025 Mercadinho Borba Gato
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
