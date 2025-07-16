@@ -1,12 +1,12 @@
-body{
-    min-width: 372px;
+body {
+  min-width: 372px;
 }
-.wrapper{
-    min-height: 100vh;
+.wrapper {
+  min-height: 100vh;
 }
 
-.wrapperform{
-    min-height: 76vh;
+.wrapperform {
+  min-height: 76vh;
 }
 
 .carousel-img {
@@ -19,4 +19,12 @@ body{
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+p.truncar-3l {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
