@@ -73,10 +73,10 @@
           <div class="row gx-3">
             <div class="col-4">
                 <div class="list-group">
-                  <a href="./cliente_dados.html" class="list-group-item list-group-item-action bg-danger text-light">
+                  <a href="./cliente_dados.html" class="list-group-item list-group-item-action">
                   <i class="bi-person fs-6">Dados Pessoais</i>
                   </a>
-                  <a href="./cliente_contatos.html" class="list-group-item list-group-item-action">
+                  <a href="./cliente_contatos.html" class="list-group-item list-group-item-action  bg-danger text-light">
                   <i class="bi-mailbox fs-6">Contatos</i>
                   </a>
                   <a href="./cliente_endereco.html" class="list-group-item list-group-item-action">
@@ -91,17 +91,25 @@
                   <a href="./cliente_senha.html" class="list-group-item list-group-item-action">
                   <i class="bi-lock fs-6">Alterar Senha</i>
                   </a>
-                  <a href="./index.html" class="list-group-item list-group-item-action">
+                  <a href="./index.html.html" class="list-group-item list-group-item-action">
                   <i class="bi-door-open fs-6">Sair</i>
                   </a>
                 </div>
             </div>
             <div class="col-8">
-
+                <form action="">
+                  <div class="form-floating mb-3 col-md-8">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="" autofocus>
+                    <label for="txtEmail">Email</label>
+                  </div>
+                  <div class="form-floating mb-3 col-md-6">
+                    <input type="text" class="form-control" id="txtTelefone" placeholder="">
+                    <label for="txtTelefone">Telefone</label>
+                  </div>                  
+                </form>
             </div>
           </div>
         </div>
-
       </main>
       <!-- FOOTER -->
       <footer class="bg-danger text-white border-top shadow-sm py-3">
