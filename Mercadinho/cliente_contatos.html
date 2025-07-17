@@ -11,7 +11,7 @@
     />
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Mercadinho</title>
+    <title>Mercadinho :: Área Adminstrativa</title>
   </head>
   <body>
     <div class="d-flex flex-column wrapper">
@@ -19,7 +19,7 @@
         class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sn mb-3 py-3"
       >
         <div class="container">
-          <a class="navbar-brand text-white" href="/">Mercadinho Borba Gato :: Área do Cliente</a>
+          <a class="navbar-brand text-white" href="/">Mercadinho Borba Gato</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -35,6 +35,11 @@
               </li>
               <li class="nav-item">
                 <a href="/contato.html" class="nav-link text-white">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a href="/pdv.html" class="nav-link text-white"
+                  >Ponto de Vendas</a
+                >
               </li>
             </ul>
             <div class="align-self-end">
@@ -72,41 +77,79 @@
           <h1>Minha Conta</h1>
           <div class="row gx-3">
             <div class="col-4">
-                <div class="list-group">
-                  <a href="./cliente_dados.html" class="list-group-item list-group-item-action">
+              <div class="list-group">
+                <a
+                  href="./cliente_admin.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-person fs-6">Administrativo</i>
+                </a>
+                <a
+                  href="./cliente_dados.html"
+                  class="list-group-item list-group-item-action"
+                >
                   <i class="bi-person fs-6">Dados Pessoais</i>
-                  </a>
-                  <a href="./cliente_contatos.html" class="list-group-item list-group-item-action  bg-danger text-light">
+                </a>
+                <a
+                  href="./cliente_contatos.html"
+                  class="list-group-item list-group-item-action bg-danger text-light"
+                >
                   <i class="bi-mailbox fs-6">Contatos</i>
-                  </a>
-                  <a href="./cliente_endereco.html" class="list-group-item list-group-item-action">
+                </a>
+                <a
+                  href="./cliente_endereco.html"
+                  class="list-group-item list-group-item-action"
+                >
                   <i class="bi-house-door fs-6">Endereços</i>
-                  </a>
-                  <a href="./cliente_pedidos.html" class="list-group-item list-group-item-action">
+                </a>
+                <a
+                  href="./cliente_pedidos.html"
+                  class="list-group-item list-group-item-action"
+                >
                   <i class="bi-truck fs-6">Pedidos</i>
-                  </a>
-                  <a href="./cliente_favoritos.html" class="list-group-item list-group-item-action">
+                </a>
+                <a
+                  href="./cliente_favoritos.html"
+                  class="list-group-item list-group-item-action"
+                >
                   <i class="bi-heart fs-6">Favoritos</i>
-                  </a>
-                  <a href="./cliente_senha.html" class="list-group-item list-group-item-action">
+                </a>
+                <a
+                  href="./cliente_senha.html"
+                  class="list-group-item list-group-item-action"
+                >
                   <i class="bi-lock fs-6">Alterar Senha</i>
-                  </a>
-                  <a href="./index.html.html" class="list-group-item list-group-item-action">
+                </a>
+                <a
+                  href="./index.html.html"
+                  class="list-group-item list-group-item-action"
+                >
                   <i class="bi-door-open fs-6">Sair</i>
-                  </a>
-                </div>
+                </a>
+              </div>
             </div>
             <div class="col-8">
-                <form action="">
-                  <div class="form-floating mb-3 col-md-8">
-                    <input type="email" class="form-control" id="txtEmail" placeholder="" autofocus>
-                    <label for="txtEmail">Email</label>
-                  </div>
-                  <div class="form-floating mb-3 col-md-6">
-                    <input type="text" class="form-control" id="txtTelefone" placeholder="">
-                    <label for="txtTelefone">Telefone</label>
-                  </div>                  
-                </form>
+              <form action="">
+                <div class="form-floating mb-3 col-md-8">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="txtEmail"
+                    placeholder=""
+                    autofocus
+                  />
+                  <label for="txtEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txtTelefone"
+                    placeholder=""
+                  />
+                  <label for="txtTelefone">Telefone</label>
+                </div>
+              </form>
             </div>
           </div>
         </div>

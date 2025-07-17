@@ -36,11 +36,6 @@
               <li class="nav-item">
                 <a href="/contato.html" class="nav-link text-white">Contato</a>
               </li>
-              <li class="nav-item">
-                <a href="/pdv.html" class="nav-link text-white"
-                  >Ponto de Vendas</a
-                >
-              </li>
             </ul>
             <div class="align-self-end">
               <ul class="navbar-nav">
@@ -78,15 +73,50 @@
           <div class="row gx-3">
             <div class="col-4">
               <div class="list-group">
-                <a
-                  href="./cliente_admin.html"
-                  class="list-group-item list-group-item-action"
-                >
-                  <i class="bi-person fs-6">Administrativo</i>
-                </a>
+                <!-- Area Administrativo -->
+                <div class="accordion mt-3" id="accordionAdmin">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAdmin">
+                      <button
+                        class="accordion-button collapsed bg-danger text-white"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseAdmin"
+                        aria-expanded="false"
+                        aria-controls="collapseAdmin"
+                      >
+                        <i class="bi-person fs-6 me-2"></i> Painel
+                        Administrativo
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseAdmin"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingAdmin"
+                      data-bs-parent="#accordionAdmin"
+                    >
+                      <div class="accordion-body p-0">
+                        <a
+                          href="./cadastro_produtos.html"
+                          class="list-group-item list-group-item-action"
+                        >
+                          <i class="bi-box"></i> Cadastro de Produtos
+                        </a>
+                        <a
+                          href="./pdv.html"
+                          class="list-group-item list-group-item-action"
+                        >
+                          <i class="bi-cash-coin"></i> PDV
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fim do accodion -->
                 <a
                   href="./cliente_dados.html"
-                  class="list-group-item list-group-item-action bg-danger text-light"
+                  class="list-group-item list-group-item-action"
                 >
                   <i class="bi-person fs-6">Dados Pessoais</i>
                 </a>
@@ -128,38 +158,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-8">
-              <form action="">
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="txtNome"
-                    placeholder=""
-                    autofocus
-                  />
-                  <label for="txtNome">Nome</label>
-                </div>
-                <div class="form-floating mb-3 col-md-6 col-xl-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="txtCpf"
-                    placeholder=""
-                  />
-                  <label for="txtCpf">CPF</label>
-                </div>
-                <div class="form-floating mb-3 col-md-6 col-xl-4">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="txtDataNascimento"
-                    placeholder=""
-                  />
-                  <label for="txtDataNascimento">Data de Nascimento</label>
-                </div>
-              </form>
-            </div>
+            <div class="col-8"></div>
           </div>
         </div>
       </main>

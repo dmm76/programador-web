@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="mb-4">Selecione abaixo a opção que melhor te representa:</p>
             <div class="d-flex justify-content-around">
               <a href="cadcli.html" class="btn btn-success">Sou Cliente</a>
-              <a href="cadven.html" class="btn btn-warning">Sou Vendedor</a>
+              <a href="cadven.html" class="btn btn-warning">Sou Vendedor</a>              
             </div>
           </div>
         </div>
