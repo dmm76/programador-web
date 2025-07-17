@@ -89,7 +89,7 @@
                 </a>
                 <a
                   href="./cliente_endereco.html"
-                  class="list-group-item list-group-item-action bg-danger text-light"
+                  class="list-group-item list-group-item-action"
                 >
                   <i class="bi-house-door fs-6">Endereços</i>
                 </a>
@@ -107,7 +107,7 @@
                 </a>
                 <a
                   href="./cliente_senha.html"
-                  class="list-group-item list-group-item-action"
+                  class="list-group-item list-group-item-action bg-danger text-light"
                 >
                   <i class="bi-lock fs-6">Alterar Senha</i>
                 </a>
@@ -120,53 +120,43 @@
               </div>
             </div>
             <div class="col-8">
-              <form action="">
-                <div class="form-floating mb-3 col-md-6 col-lg-4">
+              <form class="col-sm-12 col-md-8 col-lg-6">
+                <div class="form-floating mb-3">
                   <input
-                    type="text"
+                    type="password"
+                    id="txtSenhaAtual"
                     class="form-control"
-                    id="txtCep"
                     placeholder=""
                     autofocus
                   />
-                  <label for="txtCep">CEP</label>
-                </div>
-                <div class="mb-3 col-md-6 col-lg-8">
-                  <textarea
-                    class="form-control text-muted bg-light"
-                    style="height: 58px; font-size: 14px"
-                    disabled
-                  >
-Digite o CEP para buscarmos o endereço.</textarea
-                  >
-                </div>
-                <div class="form-floating mb-3 col-md-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="txtNumero"
-                    placeholder=""
-                  />
-                  <label for="txtNumero">Número</label>
-                </div>
-                <div class="form-floating mb-3 col-md-8">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="txtComplemento"
-                    placeholder=""
-                  />
-                  <label for="txtComplemento">Complemento</label>
+                  <label for="txtSenhaAtual">Digite a senha atual</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input
-                    type="text"
+                    type="password"
+                    id="txtSenha"
                     class="form-control"
-                    id="txtReferencia"
                     placeholder=""
                   />
-                  <label for="txtReferencia">Ponto de Referência</label>
+                  <label for="txtSenha">Digite a nova senha</label>
                 </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    id="txtConfSenha"
+                    class="form-control"
+                    placeholder=""
+                  />
+                  <label for="txtConfSenha">Confirme a nova senha</label>
+                </div>
+
+                <button
+                  type="button"
+                  onclick="window.location.href='confirmanovasenha.html'"
+                  class="btn btn-lg btn-danger"
+                >
+                  Alterar Senha
+                </button>
               </form>
             </div>
           </div>

@@ -11,7 +11,7 @@
     />
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Mercadinho :: Confirmação da Nova Senha</title>
+    <title>Mercadinho :: Detalhes do Produto</title>
   </head>
   <body>
     <div class="d-flex flex-column wrapper">
@@ -73,26 +73,69 @@
       <!-- MAIN -->
       <main class="flex-fill">
         <div class="container">
-          <h1>Nova Senha Cadastrada</h1>
-          <hr />
-          <p>Caro cliente,</p>
-          <p>
-            Sua nova senha foi cadastrada com sucesso. Para entrar em sua àrea
-            restrita agora mesmo, <a href="/login.html">Clique Aqui</a>
-          </p>
-
-          <p>Agradecemos pela confiança em nossos serviços</p>
-
-          <p>
-            Cordiamente <br />
-            Centra de Relacionamento Mercadinho Borba Gato
-          </p>
-
-          <p>
-            <a href="/index.html" class="btn btn-lg btn-danger"
-              >Voltar à página Principal</a
-            >
-          </p>
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <img
+                src="./img/produtos.jpg"
+                class="img-thumbnail"
+                id="imgProduto"
+              />
+              <br class="clearfix" />
+              <div class="row my-3 gx-3">
+                <div class="col-3">
+                  <img
+                    src="./img/produtos.jpg"
+                    class="img-thumbnail"
+                    onclick="trocarImagem(this)"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./img/produtos02.jpg"
+                    class="img-thumbnail"
+                    onclick="trocarImagem(this)"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./img/iogurtes.jpg"
+                    class="img-thumbnail"
+                    onclick="trocarImagem(this)"
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./img/higiene.jpg"
+                    class="img-thumbnail"
+                    onclick="trocarImagem(this)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <h1>Banana Prata</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci fugiat quisquam officia laudantium beatae! Harum
+                excepturi eaque esse doloremque rerum quisquam molestiae
+                eligendi dolores, nesciunt cumque repellat, velit aspernatur et.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                saepe culpa et in explicabo soluta ut quidem, sapiente modi
+                sequi officiis cum nihil perferendis libero delectus sint? Est,
+                esse perferendis!
+              </p>
+              <p>
+                <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2">
+                  <i class="bi-cart">Adicionar ao Carrinho</i>
+                </button>
+                <button class="btn btn-lg btn-outline-danger">
+                  <i class="bi-heart">Adicionar aos Favoritos</i>
+                </button>
+              </p>
+            </div>
+          </div>
         </div>
       </main>
       <!-- FOOTER -->
