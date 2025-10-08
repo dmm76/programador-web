@@ -1,0 +1,32 @@
+<?php
+date_default_timezone_set('America/Sao_Paulo');
+session_start();
+class Database
+{
+    public $conexao;
+
+    public function __construct($host = "localhost", $usuario = "root", $senha = "",  $base = "ferramentas")
+    {
+        $this->conexao = new mysqli($host, $usuario, $senha, $base);
+
+        if ($this->conexao->connect_error) {
+            echo "Falha na conexão" . $this->conexao->connect_error;
+        }
+    }
+
+    public function query($sql)
+    {
+        return $this->conexao->query($sql);
+    }
+
+    public function prepare(string $sql)
+    {
+        return $this->conexao->prepare($sql);
+    }
+
+    public function escape_string(?string $str): string
+    {
+        if ($str === null) return '';
+        return $this->conexao->real_escape_string($str);
+    }
+}
